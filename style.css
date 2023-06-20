@@ -44,7 +44,7 @@ button {
   background-position: center center;
   background-size: cover;
 }
-.navbar{
+.navbar {
   width: 80%;
   display: flex;
   align-items: flex-end;
@@ -71,7 +71,6 @@ button {
   flex-direction: column;
   align-items: flex-end;
   align-items: flex-start;
- 
 }
 .site-name img {
   max-width: 16rem;
@@ -120,13 +119,11 @@ button {
   font-size: 0.8rem;
   font-weight: 500;
   font-family: "Readex Pro", sans-serif;
-  
 }
-
 
 /* Toggle Nav */
 
-.nav-toggler{
+.nav-toggler {
   display: none;
   height: 40px;
   width: 44px;
@@ -135,15 +132,14 @@ button {
   cursor: pointer;
   border: none;
   margin-right: 15px;
-
 }
 
-.nav-toggler:focus{
+.nav-toggler:focus {
   outline: none;
   box-shadow: 0 0 15px rgba(112, 98, 98, 0.5);
 }
 
-.nav-toggler span{
+.nav-toggler span {
   height: 3px;
   width: 25px;
   background-color: white;
@@ -152,11 +148,12 @@ button {
   margin: auto;
   transition: all 0.3s ease;
 }
-.nav-toggler.active span{
+.nav-toggler.active span {
   background-color: transparent;
 }
-.nav-toggler span::before,.nav-toggler span::after{
-  content: '';
+.nav-toggler span::before,
+.nav-toggler span::after {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -165,23 +162,18 @@ button {
   background-color: white;
   transition: all 0.3s ease;
 }
-.nav-toggler.active span::before{
+.nav-toggler.active span::before {
   transform: rotate(45deg);
 }
-.nav-toggler span::before
-{
+.nav-toggler span::before {
   transform: translateY(-6px);
 }
-.nav-toggler span::after
-{
+.nav-toggler span::after {
   transform: translateY(6px);
 }
-.nav-toggler.active span::after
-{
+.nav-toggler.active span::after {
   transform: rotate(135deg);
 }
-
-
 
 .right-navbar1 {
   display: none;
@@ -207,25 +199,24 @@ button {
 .right-navbar1 .nav-links1 a i {
   transform: translateZ(0);
 }
-.nav-links{
+.nav-links {
   max-height: fit-content;
 }
-@media (max-width:1200px)
-{
-  .navbar{
+@media (max-width: 1200px) {
+  .navbar {
     justify-content: space-between;
     height: 100%;
     align-items: center;
   }
-  .top-container.open{
+  .top-container.open {
     height: 60vh;
     transition: 0.4s;
-  } 
-  .nav-toggler{
+  }
+  .nav-toggler {
     display: block;
     transition: all 0.4s;
   }
-  .nav-links{
+  .nav-links {
     width: 100%;
     padding: 0px;
     height: 40vh;
@@ -238,12 +229,12 @@ button {
     opacity: 0;
     color: black;
   }
-  
-  .nav-links li{
+
+  .nav-links li {
     width: 100%;
     padding: 10px;
   }
-  .nav-links li:hover{
+  .nav-links li:hover {
     background-color: black;
   }
   .nav-links.open {
@@ -254,29 +245,29 @@ button {
     align-items: center;
     visibility: visible;
     transition: all 0.2s ease;
-
   }
 }
 @media (max-width: 761px) {
-  .nav-toggler{
+ 
+  .nav-toggler {
     display: none;
   }
-  .site-name{
+  .site-name {
     display: grid;
     grid-template-rows: 2fr 1fr;
     justify-items: center;
   }
-  .logo img{
+  .logo img {
     width: 75px;
   }
-  .site-name p{
+  .site-name p {
     font-size: 15px;
   }
-  .navbar{
+  .navbar {
     width: 80vw;
     padding-right: 10px;
   }
-  .site-name img{
+  .site-name img {
     width: 60rem;
     height: 6rem;
   }
@@ -289,7 +280,7 @@ button {
   .nav-links li:hover::after {
     opacity: 0;
   }
-  .top-heading{
+  .top-heading {
     padding: 15px;
   }
   .nav-links li a:hover {
@@ -304,7 +295,9 @@ button {
   .right-navbar {
     transition: all 0.6s ease;
     display: none;
+    
   }
+  
 }
 
 /* ------- NAVBAR ENDS ------- */
@@ -321,14 +314,18 @@ button {
 }
 @media (max-width: 800px) {
   .body-container {
-    grid-template-columns: 0fr 10fr 0fr 0fr;
+    grid-template-columns: 0fr 1fr 0fr 0fr;
+    /* grid-gap: 10px; */
+  }
+  .main-body {
+    margin-top: 240px;
   }
 }
 .div-2 p {
   padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   color: #a4127e;
-  /* font-size: 0px; */
+
   font-weight: 400;
   /* letter-spacing: 1px; */
   font-size: 0.7rem;
@@ -360,7 +357,6 @@ button {
 }
 .story .story-footer {
   display: flex;
-
   position: relative;
   justify-content: center;
   align-items: center;

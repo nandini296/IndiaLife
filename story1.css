@@ -1,0 +1,187 @@
+.body-main {
+  margin-top: 200px;
+}
+.story-container {
+  display: grid;
+  grid-gap: 1rem;
+
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+}
+.feed h1 {
+  color: #464646;
+  font-family: "Playfair Display", Sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  padding: 5px;
+}
+
+.feed-img {
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.div-2 .img-source {
+  border-bottom: 2px solid #7f7f7f;
+  color: #7f7f7f;
+  font-family: "Readex Pro", Sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .story-container {
+    grid-template-columns: 0fr 1fr 0fr 0fr;
+  }
+  .body-main {
+    margin-top: 240px;
+  }
+}
+
+.div-2 .news-reporter {
+  color: #464646;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.div-2 .reporting {
+  color: #7f7f7f;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: oblique;
+  line-height: 12px;
+}
+.div-2 .name {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: lowercase;
+  font-style: oblique;
+}
+
+.div-2 .feed-date {
+  font-size: 13px;
+  font-weight: 800;
+  color: #7f7f7f;
+}
+
+.div-2 .para-1,
+.div-2 .para-3,
+.div-2 .para-4,
+.div-2 .para-6,
+.div-2 .para-8 {
+  color: #7f7f7f;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+  padding: 8px;
+  word-spacing: -1px;
+  text-align: justify;
+  font-family: "Red Hat Display";
+}
+.div-2 .para-1 {
+  grid-area: para-1;
+}
+
+.div-2 .para-2 {
+  grid-area: para-2;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f5f9ad;
+  border-style: none;
+}
+.div-2 .para-2 p {
+  color: #a4127e;
+  font-weight: 400;
+  font-style: oblique;
+  font-size: 1rem;
+}
+.div-2 .para-2 .tweet {
+  text-align: justify;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.div-2 .para-2 .tweet button {
+  padding: 0.7em 1.2em;
+  border-radius: 100em;
+  background-color: #1da1f2;
+  color: #fff;
+  font-size: 15px;
+}
+
+.div-2 .para-3 {
+  grid-area: para-3;
+}
+
+.div-2 .para-4 {
+  grid-area: para-4;
+}
+
+.div-2 .para-5 {
+  grid-area: para-5;
+}
+
+.div-2 .para-6 {
+  grid-area: para-6;
+}
+
+.div-2 .para-7 {
+  grid-area: para-7;
+}
+
+.div-2 .para-8 {
+  grid-area: para-8;
+}
+
+.div-2 .feed-info {
+  display: grid;
+  grid-gap: 0.6rem;
+  grid-template-areas:
+    "para-1 para-1"
+    "para-2 para-3"
+    "para-4 para-5"
+    "para-6 para-6"
+    "para-7 para-7"
+    "para-8 para-8";
+}
+.div-2 .info-represent {
+  border: 1px solid #d0cdcd;
+  padding: 8px;
+  padding-top: 0px;
+}
+.div-2 .info-represent p {
+  color: #464646;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: oblique;
+  font-family: "Red Hat Display";
+  /* line-height: 18px; */
+  /* -webkit-text-stroke-color: #000; */
+  stroke: #000;
+}
+.story-footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: #464646;
+  /* font-size: 17px; */
+  font-family: "Red Hat Display", sans-serif;
+}
+.story-footer h2 {
+  font-weight: 500;
+  font-size: 17px;
+
+}
+.story-btn {
+  font-family: "Red Hat Display", Sans-serif;
+  font-weight: 500;
+  color: #a4127e;
+}
+
+.div-2 .feed-line {
+  border-bottom: 1px solid #7f7f7f;
+}
