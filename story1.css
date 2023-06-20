@@ -168,14 +168,11 @@
   justify-content: center;
   align-items: center;
   color: #464646;
-  color: #f5f9ad;
-  /* font-size: 17px; */
   font-family: "Red Hat Display", sans-serif;
 }
 .story-footer h2 {
   font-weight: 500;
   font-size: 17px;
-
 }
 .story-btn {
   font-family: "Red Hat Display", Sans-serif;
