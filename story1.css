@@ -1,5 +1,4 @@
-button
-{
+button {
   border: none;
 }
 
@@ -180,7 +179,7 @@ button
   align-items: center;
   display: flex;
   margin: 0px 4px 0px 4px;
-  background-color: #CCC;
+  background-color: #ccc;
   height: 100%;
 }
 
@@ -200,7 +199,7 @@ button
     "para-8 para-8";
 }
 .div-2 .info-represent {
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   padding: 8px;
   padding-top: 0px;
 }
@@ -243,7 +242,6 @@ button
   color: #a4127e;
 }
 
-
 .div-2 .story-btn {
   font-family: "Red Hat Display", Sans-serif;
   font-weight: 500;
@@ -254,28 +252,25 @@ button
   border-bottom: 1px solid #7f7f7f;
 }
 
-.div-2 .like-share
-{
+.div-2 .like-share {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.div-2 .like-share button
-{
+.div-2 .like-share button {
   background-color: #1877f2;
   margin-left: 5px;
-  padding: 2px 12px 2px 12px; 
+  padding: 2px 12px 2px 12px;
   border-radius: 4px;
   font-size: 11px;
   color: white;
 }
-.div-2 .like-share p{
+.div-2 .like-share p {
   padding-left: 5px;
 }
-.div-2 .like-share button a{
+.div-2 .like-share button a {
   color: white;
 }
-
 
 .div-2 .story-btn {
   display: flex;
@@ -307,3 +302,183 @@ button
   background-color: #a4127e;
   transition: 0.4s;
 }
+
+/* COMMENT CONTAINER STARTS */
+
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment-container {
+  /* max-width: 70vw;   */
+  /* background-color: #d2c8c8; */
+}
+
+.accordian {
+  width: 50vw;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.accordian .label1-container {
+  padding: 7px 2px 9px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordian .label1-container .subscribe {
+  display: flex;
+  color: #666;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe h3 {
+  margin: 0px 5px;
+  font-weight: 400;
+}
+.accordian .label1-container .facebook {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.accordian .label1-container .facebook h3 {
+  line-height: 20px;
+  font-size: 14px !important;
+  margin: 0 9px;
+  vertical-align: baseline;
+  font-weight: 400;
+  color: #666;
+}
+.accordian .label1-container .facebook .facebook-icon {
+  opacity: 0.8;
+  font-size: 14px;
+  cursor: pointer;
+  /* color: #1da1f2; */
+  text-align: center;
+  align-items: center;
+
+  line-height: 22px;
+  background-color: #4267b2;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+}
+.facebook .facebook-icon a i {
+  color: white;
+}
+
+.content1 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 0 5px;
+  margin-bottom: 0;
+}
+.content1-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.content1 .notify label {
+  font-size: 14px;
+  display: block;
+  padding: 3px 10px 3px 1px;
+  line-height: 20px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.notify {
+  display: flex;
+  width: 60%;
+}
+.content1 .notify select {
+  flex-grow: 1;
+  font-size: 13px;
+  display: block;
+  padding-right: 5px;
+  box-sizing: border-box;
+  color: #464646;
+  /* width: 40%; */
+}
+.content1 .email-container {
+  font-size: 14px;
+  display: flex;
+  padding: 0 5px 0 0;
+  box-sizing: border-box;
+  width: 30%;
+}
+.content1 .email-container input {
+  font-size: 13px !important;
+  padding: 3px !important;
+  width: 100% !important;
+  height: auto !important;
+  line-height: 20px !important;
+  box-sizing: border-box !important;
+  clear: both;
+  float: none;
+  margin: 0;
+}
+.content1 select {
+  border: 1px solid #ccc;
+  margin-right: 4px;
+}
+.content1 input {
+  border: 1px solid #ccc;
+}
+.content1 .email-button {
+  font-size: 14px;
+  display: block;
+  box-sizing: border-box;
+}
+.content1 .email-button button {
+  background-color: #a4127e;
+  color: #ffffff;
+  padding: 4px 8px 4px 8px;
+}
+
+.accordian .contentBx {
+  position: relative;
+  margin: 10px 20px;
+}
+.accordian .contentBx .label {
+  position: relative;
+  padding: 10px;
+  /* background-color: #1877f2; */
+  /* color: wheat; */
+  cursor: pointer;
+}
+.accordian .contentBx1 .content1 {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  /* visibility: 0; */
+  display: none;
+}
+
+.accordian .contentBx1.active1 .content1 {
+  display: block;
+  height: 150px;
+  padding: 10px;
+}
+
+/* .accordian */
+
+/* COMMENT CONTAINER ENDS */
