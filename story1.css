@@ -24,6 +24,9 @@ button {
   width: 100%;
   text-align: center;
 }
+.feed-img img{
+  width: 100%;
+}
 .div-2 .img-source {
   border-bottom: 2px solid #7f7f7f65;
   color: #7f7f7f;
@@ -198,6 +201,7 @@ button {
     "para-7 para-7"
     "para-8 para-8";
 }
+
 .div-2 .info-represent {
   border: 1px solid #ccc;
   padding: 8px;
@@ -288,8 +292,24 @@ button {
   border-radius: 6px;
   cursor: pointer;
   margin-top: 10px;
-  /* transition: 0.4s; */
+
   font-weight: 600;
+}
+@media (max-width: 810px) {
+  .story-container{
+    grid-template-columns: 0fr 1fr 0fr 0fr;
+    padding: 10px;
+  }
+  .div-2{
+    /* width: 100%; */
+  }
+  .body-main{
+    margin-top: 270px;
+  }
+  .div-2 .feed-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 761px) {
   .div-2 .story-btn button {
@@ -364,7 +384,6 @@ button {
   /* color: #1da1f2; */
   text-align: center;
   align-items: center;
-
   line-height: 22px;
   background-color: #4267b2;
   width: 22px;
@@ -414,7 +433,6 @@ button {
   padding-right: 5px;
   box-sizing: border-box;
   color: #464646;
-  /* width: 40%; */
 }
 .content1 .email-container {
   font-size: 14px;
@@ -459,17 +477,15 @@ button {
 .accordian .contentBx .label {
   position: relative;
   padding: 10px;
-  /* background-color: #1877f2; */
-  /* color: wheat; */
   cursor: pointer;
 }
+
 .accordian .contentBx1 .content1 {
   position: relative;
   height: 0;
   overflow: hidden;
   transition: 0.5s;
   overflow-y: auto;
-  /* visibility: 0; */
   display: none;
 }
 
@@ -482,3 +498,39 @@ button {
 /* .accordian */
 
 /* COMMENT CONTAINER ENDS */
+
+  
+  @media(max-width: 800px)
+  {
+    .accordian{
+      width: 90vw;
+      /* flex-direction: column; */
+    }
+    .accordian .content1-container{
+      /* flex-direction: column; */
+      /* justify-content: flex-start; */
+      /* width: 100%; */
+    }
+    .accordian .content1-container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .notify {
+      /* display: flex; */
+      width: 100%;
+    }
+  
+    .content1 .email-container {
+      width: 100%;
+    }
+    .content1 .email-button {
+      display: flex;
+      width: 100%;
+    
+    }
+    .content1 .email-button button{
+      width: 99%;
+    }
+    
+  }
