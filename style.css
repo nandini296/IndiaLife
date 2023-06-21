@@ -339,8 +339,7 @@ button {
   color: #7f7f7f;
   font-size: 0.8rem;
 }
-.story .story-img{
-  
+.story .story-img {
 }
 .story .story-img img {
   width: 100%;
@@ -367,7 +366,7 @@ button {
   /* margin-top: 10px; */
   font-family: "Red Hat Display", sans-serif;
 }
-.story-footer h2{
+.story-footer h2 {
   font-size: 1.2rem;
   font-weight: 506;
 }
