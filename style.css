@@ -310,27 +310,22 @@ button {
 .body-container {
   display: grid;
   grid-gap: 1rem;
-  /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
   grid-template-columns: 1fr 4fr 1fr 1fr;
 }
 @media (max-width: 800px) {
   .body-container {
     grid-template-columns: 0fr 1fr 0fr 0fr;
-    /* grid-gap: 10px; */
   }
   .main-body {
-    margin-top: 240px;
+    margin-top: 270px;
   }
 }
 .div-2 p {
-  padding-top: 10px;
-  /* padding-bottom: 10px; */
+  padding-top: 8px;
   color: #a4127e;
-
-  font-weight: 400;
-  /* letter-spacing: 1px; */
-  font-size: 0.7rem;
-  font-family: "Readex Pro", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .story h1 {
@@ -341,20 +336,27 @@ button {
 }
 
 .story .img-info {
-  color: black;
+  color: #7f7f7f;
+  font-size: 0.8rem;
+}
+.story .story-img{
+  
 }
 .story .story-img img {
   width: 100%;
   margin-top: 5px;
+  height: 400px;
+  object-fit: fill;
+  /* display: block; */
 }
 .story .story-info {
   color: #7f7f7f;
   font-weight: 100;
   letter-spacing: 0px;
-  word-spacing: 1px;
+  /* word-spacing: 1px; */
   font-size: 1.1rem;
   font-family: "Red Hat Display", sans-serif;
-  line-height: 30px;
+  line-height: 26px;
 }
 .story .story-footer {
   display: flex;
@@ -362,8 +364,12 @@ button {
   justify-content: center;
   align-items: center;
   color: #464646;
-  font-size: 13px;
+  /* margin-top: 10px; */
   font-family: "Red Hat Display", sans-serif;
+}
+.story-footer h2{
+  font-size: 1.2rem;
+  font-weight: 506;
 }
 .story .story-footer .share-links {
   display: grid;
@@ -371,7 +377,7 @@ button {
   grid-template-columns: repeat(6, 1fr);
   font-size: 20px;
   transition: all 0.4s;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .story .story-footer .share-links a {
@@ -380,6 +386,7 @@ button {
 .story .story-footer .share-links a:hover {
   color: #a4127e;
 }
+
 .story .story-btn {
   display: flex;
   /* flex-wrap: wrap; */
@@ -499,7 +506,8 @@ button {
 
 /* -------- FOOTER STARTS --------- */
 .footer-top {
-  background-color: whitesmoke;
+  background-color: white;
+  border-top: 2px dotted #464646;
 }
 .footer-top .footer-links {
   display: flex;

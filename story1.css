@@ -1,3 +1,8 @@
+button
+{
+  border: none;
+}
+
 .body-main {
   margin-top: 200px;
 }
@@ -21,7 +26,7 @@
   text-align: center;
 }
 .div-2 .img-source {
-  border-bottom: 2px solid #7f7f7f;
+  border-bottom: 2px solid #7f7f7f65;
   color: #7f7f7f;
   font-family: "Readex Pro", Sans-serif;
   font-size: 12px;
@@ -36,7 +41,30 @@
     margin-top: 240px;
   }
 }
-
+.feed-links {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+.feed-share-links {
+  width: 25%;
+  display: flex;
+  font-size: 18px;
+}
+.feed-links .name {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: lowercase;
+  font-style: oblique;
+  color: #7f7f7f;
+}
+.feed-share-links a {
+  padding: 0px 4px 0px 4px;
+}
+.feed-share-links a i {
+  color: #cccccc;
+  border-color: #cccccc;
+}
 .div-2 .news-reporter {
   color: #464646;
   font-size: 14px;
@@ -131,6 +159,30 @@
 .div-2 .para-7 {
   grid-area: para-7;
 }
+.para-7 .top-imgs,
+.para-7 .bottom-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 7px;
+  padding-top: 7px;
+}
+
+.para-7 .top-imgs .div-img,
+.para-7 .bottom-imgs .div-img {
+  border-left: 1px solid #a09f9f;
+  border-right: 1px solid #a09f9f;
+  height: 120px;
+  /* background-color: rgb(226, 15, 15); */
+}
+.para-7 .top-imgs img,
+.para-7 .bottom-imgs img {
+  position: relative;
+  align-items: center;
+  display: flex;
+  margin: 0px 4px 0px 4px;
+  background-color: #CCC;
+  height: 100%;
+}
 
 .div-2 .para-8 {
   grid-area: para-8;
@@ -148,18 +200,17 @@
     "para-8 para-8";
 }
 .div-2 .info-represent {
-  border: 1px solid #d0cdcd;
+  border: 1px solid #CCC;
   padding: 8px;
   padding-top: 0px;
 }
+
 .div-2 .info-represent p {
   color: #464646;
   font-size: 14px;
   font-weight: 400;
   font-style: oblique;
   font-family: "Red Hat Display";
-  /* line-height: 18px; */
-  /* -webkit-text-stroke-color: #000; */
   stroke: #000;
 }
 .story-footer {
@@ -170,11 +221,30 @@
   color: #464646;
   font-family: "Red Hat Display", sans-serif;
 }
-.story-footer h2 {
-  font-weight: 500;
+.div-2 .story-footer h2 {
+  font-weight: 506;
   font-size: 17px;
+  padding-right: 10px;
 }
-.story-btn {
+.div-2 .story-footer .share-links {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  /* justify-content: space-between; */
+  font-size: 25px;
+  transition: all 0.4s;
+}
+
+.div-2 .story-footer .share-links a {
+  color: #464646;
+}
+.div-2 .story-footer .share-links a:hover {
+  color: #a4127e;
+}
+
+
+.div-2 .story-btn {
   font-family: "Red Hat Display", Sans-serif;
   font-weight: 500;
   color: #a4127e;
@@ -182,4 +252,58 @@
 
 .div-2 .feed-line {
   border-bottom: 1px solid #7f7f7f;
+}
+
+.div-2 .like-share
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.div-2 .like-share button
+{
+  background-color: #1877f2;
+  margin-left: 5px;
+  padding: 2px 12px 2px 12px; 
+  border-radius: 4px;
+  font-size: 11px;
+  color: white;
+}
+.div-2 .like-share p{
+  padding-left: 5px;
+}
+.div-2 .like-share button a{
+  color: white;
+}
+
+
+.div-2 .story-btn {
+  display: flex;
+  /* flex-wrap: wrap; */
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.div-2 .story-btn button {
+  padding: 0.4rem 6rem 0.4rem 6rem;
+  border: 1px solid #a4127e;
+  background-color: transparent;
+  color: #a4127e;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  /* transition: 0.4s; */
+  font-weight: 600;
+}
+@media (max-width: 761px) {
+  .div-2 .story-btn button {
+    width: 200px;
+    padding: 8px;
+  }
+}
+.div-2 button:hover {
+  color: white;
+  background-color: #a4127e;
+  transition: 0.4s;
 }
