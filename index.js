@@ -17,7 +17,13 @@ function navToggle() {
   }
 }
 
+const writeComment = document.querySelector(".write-comment");
 const subscribe = document.querySelector(".contentBx1");
 subscribe.addEventListener("click", function () {
   subscribe.classList.toggle("active1");
 });
+
+writeComment.addEventListener("click",function(){
+  document.querySelector(".content2").classList.add("active2")
+})
+

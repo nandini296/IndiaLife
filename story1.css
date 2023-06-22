@@ -24,7 +24,7 @@ button {
   width: 100%;
   text-align: center;
 }
-.feed-img img{
+.feed-img img {
   width: 100%;
 }
 .div-2 .img-source {
@@ -298,14 +298,14 @@ button {
   font-weight: 600;
 }
 @media (max-width: 810px) {
-  .story-container{
+  .story-container {
     grid-template-columns: 0fr 1fr 0fr 0fr;
     padding: 10px;
   }
-  .div-2{
+  .div-2 {
     /* width: 100%; */
   }
-  .body-main{
+  .body-main {
     margin-top: 270px;
   }
   .div-2 .feed-info {
@@ -331,6 +331,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
 }
 .comment-container {
   /* max-width: 70vw;   */
@@ -340,6 +341,7 @@ button {
 .accordian {
   width: 50vw;
   font-family: "Red Hat Display", sans-serif;
+  /* margin-bottom: 10rem; */
 }
 
 .accordian .label1-container {
@@ -482,57 +484,251 @@ button {
   cursor: pointer;
 }
 
-.accordian .contentBx1 .content1 {
+.accordian .contentBx1 .content1 form {
   position: relative;
-  height: 0;
+  height: 0px;
   overflow: hidden;
   transition: 0.5s;
-  overflow-y: auto;
-  display: none;
 }
 
-.accordian .contentBx1.active1 .content1 {
-  display: block;
-  height: 150px;
+.accordian .contentBx1.active1 .content1 form {
+  /* display: block; */
+  height: 60px;
   padding: 10px;
 }
 
-/* .accordian */
+.accordian .label2 {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.accordian .label2-container {
+  /* height: 50px; */
+}
+.accordian .label2-container img {
+  height: 50px;
+  border-bottom: 2px solid #ccc;
+}
+.accordian .label2 .write-comment {
+  width: 100%;
+  height: 100%;
+}
+.accordian .label2 .write-comment textarea {
+  margin-left: 15px;
+  height: 54px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  outline: none;
+  transition: 0.18s ease-out;
+  resize: none;
+  overflow: hidden;
+  min-height: 3em;
+  height: max-content;
+}
+.accordian .content2 .user-info {
+  width: 49%;
+  float: left;
+  margin: 0;
+  text-align: left;
+}
+.accordian .content2 .input-userInfo {
+  width: 100%;
+  vertical-align: baseline;
+  padding: 1px 0px 8px;
+  position: relative;
+}
+.accordian .content2 .input-userInfo .input-icon {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  opacity: 0.3;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  width: 20px;
+  text-align: left;
+}
+
+.accordian .content2 .input-userInfo input {
+  border: 1px solid #dddddd;
+  color: #464646;
+  height: 32px;
+  padding-left: 30px;
+  width: 100%;
+  line-height: 20px;
+  color: #777;
+  display: inline-block;
+  float: none;
+  clear: both;
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 14px;
+  border-radius: 3px;
+  vertical-align: baseline;
+  box-shadow: 0px 0px 1px #555;
+}
+
+.accordian .content2 form {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordian .content2.active2 form {
+  /* display: block; */
+  height: 100%;
+  padding: 10px;
+}
+.post-comment {
+  width: 49%;
+  float: right;
+  margin: 0;
+  text-align: right;
+  padding: 0;
+}
+.post-comment-container {
+  text-align: right;
+  padding: 1px 2px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.icon-bell {
+  display: inline-block;
+  margin: 1px 0px 5px;
+  padding: 5px;
+  color: #7f7f7f;
+  cursor: pointer;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+}
+.accordian .content2 .post-comment button {
+  margin-left: 2%;
+  background-color: #a4127e;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Arial Hebrew", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 4px 20px;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 3px -1px #bbb;
+  border-radius: 3px;
+}
+.accordian .content2 .post-comment button a {
+  color: white;
+}
+.post-comment {
+  float: left;
+}
+.number-comments {
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.comment-no {
+  border-bottom: 2px solid #a4127e;
+  color: #555;
+  padding: 5px 15px 3px 5px;
+  font-weight: 600;
+  margin-bottom: -2px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 24px;
+}
+
+.number-comments .space {
+  flex-grow: 1;
+}
+.number-comments .filter-comment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.number-comments .bolt{
+  color: #ffa600;
+  
+  border-bottom: 2px solid #999;
+  border-bottom-color: #ffa600;
+  width: 34px;
+  font-size: 16px;
+  /* color: #999; */
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0 1px -2px;
+  line-height: 18px;
+}
+.number-comments .fire
+{
+  border-bottom: 2px solid #999;
+  color: #fc5844;
+  border-bottom-color: #fc5844;
+  width: 34px;
+  /* border-bottom-color: #ffa600; */
+  width: 34px;
+  font-size: 16px;
+  /* color: #999; */
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0 1px -2px;
+  line-height: 18px;
+}
 
 /* COMMENT CONTAINER ENDS */
-
-  
-  @media(max-width: 800px)
-  {
-    .accordian{
-      width: 90vw;
-      /* flex-direction: column; */
-    }
-    .accordian .content1-container{
-      /* flex-direction: column; */
-      /* justify-content: flex-start; */
-      /* width: 100%; */
-    }
-    .accordian .content1-container{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .notify {
-      /* display: flex; */
-      width: 100%;
-    }
-  
-    .content1 .email-container {
-      width: 100%;
-    }
-    .content1 .email-button {
-      display: flex;
-      width: 100%;
-    
-    }
-    .content1 .email-button button{
-      width: 99%;
-    }
-    
+@media (max-width: 710px) {
+  .accordian .content2 .user-info {
+    width: 100%;
   }
+}
+@media (max-width: 800px) {
+  .accordian {
+    width: 90vw;
+  }
+  .accordian .content1-container {
+  }
+  .accordian .content1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .notify {
+    /* display: flex; */
+    width: 100%;
+  }
+
+  .content1 .email-container {
+    width: 100%;
+  }
+  .content1 .email-button {
+    display: flex;
+    width: 100%;
+  }
+  .content1 .email-button button {
+    width: 99%;
+  }
+}
