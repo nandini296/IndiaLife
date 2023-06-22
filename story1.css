@@ -277,6 +277,10 @@ button {
 .div-2 .like-share button a {
   color: white;
 }
+.div-2 .like-share button:hover{
+  color: white;
+  background-color: #1877f2;
+}
 
 .div-2 .story-btn {
   display: flex;
