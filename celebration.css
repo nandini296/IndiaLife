@@ -144,7 +144,7 @@ img {
   cursor: pointer;
 }
 .connection-container-3 button a{
-    /* color: #a4127e; */
+    color: #a4127e;
 }
 .connection-container-3 button:hover a{
     color: white;

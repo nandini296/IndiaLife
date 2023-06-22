@@ -1,0 +1,16 @@
+.div-2 p {
+  margin-bottom: 1.2px;
+  color: #464646;
+  font-size: 1.1rem;
+  line-height: 28px;
+}
+
+.div-2{
+  margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.div-2 h1{
+    color: #a4127e;
+    font-family: "Red Hat Display", sans-serif;
+    margin-bottom: 10px;
+}
