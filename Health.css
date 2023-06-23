@@ -46,18 +46,29 @@
 }
 .blog .blog-info {
   display: flex;
+  margin-bottom: 10px;
 }
+
 .story-footer h2 {
   color: #464646;
   font-weight: 600;
 }
 .blogs-container img {
-  /* max-width: 100%; */
   width: 260px;
   padding-right: 20px;
   object-fit: cover;
 }
 
+
+@media(max-width:660px) {
+  .blogs-container img{
+    width: 100%;
+    height: 100%;
+  }
+  .blogs{
+    padding-top: 100px;
+  }
+}
 .blog-story button {
   border: none;
   padding: 4px 20px 4px 20px;
