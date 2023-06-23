@@ -1,0 +1,124 @@
+.main-body-container {
+}
+.blogs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogs-container .blogs {
+  width: 900px;
+}
+
+.blog p {
+  color: #a4127e;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Red Hat Display", sans-serif;
+}
+.blog h1 {
+  color: #464646;
+  font-family: "Staatliches", Sans-serif;
+  font-weight: 400;
+}
+.blog .blog-data p {
+  color: #464646;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: oblique;
+  line-height: 26px;
+  font-family: "Red Hat Display", sans-serif;
+}
+.blogs .blog {
+  padding-top: 210px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  /* border-bottom: 2px dotted #7f7f7f; */
+}
+.line{
+    border-bottom: 2px dotted #7f7f7f;
+}
+.about-blog {
+
+  font-size: 13px;
+  font-weight: 400;
+  color: #7f7f7f;
+}
+.blog .blog-info {
+  display: flex;
+}
+.story-footer h2 {
+  color: #464646;
+  font-weight: 600;
+}
+.blogs-container img {
+  /* max-width: 100%; */
+  width: 260px;
+  padding-right: 20px;
+  object-fit: cover;
+}
+
+.blog-story button {
+  border: none;
+  padding: 4px 20px 4px 20px;
+  background-color: white;
+
+  border: 1px solid#a4127e;
+  border-radius: 6px;
+  color: #a4127e;
+}
+.blog-story button:hover {
+  background-color: #a4127e;
+}
+.blog-story button:hover a {
+  color: white;
+}
+.blog-story button a {
+  color: #a4127e;
+  font-weight: 600;
+  cursor: initial;
+}
+.story-footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: #464646;
+  /* margin-top: 10px; */
+  font-family: "Red Hat Display", sans-serif;
+}
+.story-footer h2 {
+  font-size: 1.2rem;
+  font-weight: 506;
+}
+.story .story-footer .share-links {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: 20px;
+  transition: all 0.4s;
+  /* margin-left: 10px; */
+}
+
+.story .story-footer .share-links a {
+  color: #464646;
+}
+.story .story-footer .share-links a:hover {
+  color: #a4127e;
+}
+
+.story-footer .share-links {
+  display: grid;
+  grid-gap: 1rem;
+  margin-left: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: 20px;
+  transition: all 0.4s;
+}
+
+.story-footer .share-links a {
+  color: #464646;
+}
+.story-footer .share-links a:hover {
+  color: #a4127e;
+}

@@ -52,6 +52,7 @@ button {
   padding: 10px;
 }
 
+
 .left-navbar {
   display: flex;
   justify-content: space-between;
@@ -340,8 +341,7 @@ button {
   color: #7f7f7f;
   font-size: 0.8rem;
 }
-.story .story-img {
-}
+
 .story .story-img img {
   width: 100%;
   margin-top: 5px;
@@ -371,6 +371,7 @@ button {
   font-size: 1.2rem;
   font-weight: 506;
 }
+
 .story .story-footer .share-links {
   display: grid;
   grid-gap: 1rem;
