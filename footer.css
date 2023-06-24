@@ -11,6 +11,8 @@
 }
 .div-2 h1 {
   color: #a4127e;
-  font-family: "Red Hat Display", sans-serif;
+  /* font-family: "Red Hat Display", sans-serif; */
   margin-bottom: 10px;
+  font-weight: 400;
+  font-family: "Readex Pro", Sans-serif;
 }

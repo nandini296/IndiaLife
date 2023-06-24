@@ -24,7 +24,7 @@ html {
 }
 button {
   font-size: 18px;
-  
+
   font-family: "Red Hat Display", sans-serif;
 }
 
@@ -51,7 +51,6 @@ button {
   align-items: flex-end;
   padding: 10px;
 }
-
 
 .left-navbar {
   display: flex;
@@ -115,12 +114,16 @@ button {
 .top-heading {
   color: #7f7f7f;
   padding: 20px;
+  padding-top: 10px;
   background-color: white;
   padding-left: 120px;
   letter-spacing: -1px;
   font-size: 0.8rem;
   font-weight: 500;
   font-family: "Readex Pro", sans-serif;
+  /* font-size: 16px; */
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* Toggle Nav */
@@ -322,10 +325,11 @@ button {
     margin-top: 270px;
   }
 }
+
 .div-2 p {
   padding-top: 8px;
   color: #a4127e;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.8rem;
   font-family: "Red Hat Display", sans-serif;
 }
@@ -347,13 +351,11 @@ button {
   margin-top: 5px;
   height: 400px;
   object-fit: fill;
-  /* display: block; */
 }
 .story .story-info {
   color: #7f7f7f;
   font-weight: 100;
   letter-spacing: 0px;
-  /* word-spacing: 1px; */
   font-size: 1.1rem;
   font-family: "Red Hat Display", sans-serif;
   line-height: 26px;
@@ -364,12 +366,12 @@ button {
   justify-content: center;
   align-items: center;
   color: #464646;
-  /* margin-top: 10px; */
   font-family: "Red Hat Display", sans-serif;
 }
 .story-footer h2 {
-  font-size: 1.2rem;
-  font-weight: 506;
+  font-size: 1.1rem;
+  margin-right: 8px;
+  font-weight: 500;
 }
 
 .story .story-footer .share-links {
@@ -378,7 +380,6 @@ button {
   grid-template-columns: repeat(6, 1fr);
   font-size: 20px;
   transition: all 0.4s;
-  /* margin-left: 10px; */
 }
 
 .story .story-footer .share-links a {
@@ -404,8 +405,8 @@ button {
   border-radius: 6px;
   cursor: pointer;
   margin-top: 10px;
-  /* transition: 0.4s; */
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
 }
 @media (max-width: 761px) {
   .story .story-btn button {

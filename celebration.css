@@ -27,24 +27,30 @@ html {
   margin-right: auto;
   margin-left: auto;
   position: relative;
+  justify-content: space-between;
+  align-items: self-start;
+}
+.top-content {
+  width: 100%;
 }
 
-img {
-  /* width: 400px; */
-}
 .topcele-left {
   padding: 5px 0px 0px 10px;
   display: flex;
   text-align: left;
   flex-direction: row;
   align-items: center;
+  width: 40%;
 }
 .topcele-left .site-logo {
   margin-right: 4px;
   margin-left: 0;
-  /* width: 100%; */
 }
-
+.accordian-dots {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .topcele-left .site-logo img {
   width: 64px;
   height: 64px;
@@ -76,10 +82,128 @@ img {
   font-style: oblique;
   line-height: 16px;
 }
+.topcele-right-container {
+  display: flex;
+  /* width: 100%; */
+  justify-content: flex-end;
+}
 .topcele-right {
-  width: 50%;
+  /* width: 70%; */
+  display: flex;
+  justify-content: flex-end;
+}
+.topcele-right .label-dots {
+  cursor: pointer;
+  /* transform: rotate(90deg); */
+  position: relative;
+}
+.contentBx-dots {
+  /* width: 60%; */
+  right: 100%;
+  height: 0px;
+  visibility: hidden;
+}
+.contentBx-dots .label-dots.active1 {
+  transform: rotate(90deg);
+}
+.contentBx-dots.active1 {
+  height: 270px;
+  visibility: visible;
+}
+@media (max-width: 600px) {
+  .topcele-right-container .accordian-dots {
+    width: 70%;
+  }
+  .contentBx-dots.active1 {
+    height: 350px;
+  }
+  .topcele-left {
+    width: 100%;
+  }
+  .celebration-body {
+    /* width: 90vw; */
+    /* padding: 0px; */
+  }
+}
+.content-dots {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-dots .dots-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.content-dots .dots-icons a {
+  font-size: 25px;
+  padding: 10px 10px;
+}
+.content-dots .dots-icons a i {
+  color: #464646;
 }
 
+.contentBx-dots .content-dots {
+  border: 2px solid #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.content-dots .bottom-content .form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  max-width: 100%;
+  /* padding: 10px; */
+}
+.content-dots .bottom-content p {
+  font-family: "Red Hat Display", Sans-serif;
+  font-weight: 400;
+  color: #464646;
+  font-size: 1rem;
+  padding-bottom: 2px;
+  font-style: oblique;
+}
+
+.content-dots .bottom-content form label {
+  padding-right: 15px;
+  padding-left: 10px;
+  font-size: 1rem;
+  /* color: #46; */
+  font-style: oblique;
+  color: #464646;
+}
+.content-dots .bottom-content form input[type="checkbox"] {
+  /* background-color: green; */
+  accent-color: #0693e3;
+}
+.bottom-content form button {
+  width: 100%;
+  padding: 10px;
+  /* color: #a4127e; */
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: white;
+}
+.bottom-content form button a {
+  color: #a4127e;
+}
+.bottom-content form button:hover a {
+  color: white;
+}
+@media (max-width: 600px) {
+  .bottom-content form button {
+    width: 60%;
+    /* position: absolute; */
+  }
+  .bottom-content form .submit-btn {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
 .bottomcele-container .info .info-heading {
   color: #a4127e;
   font-weight: 600;
@@ -111,24 +235,28 @@ img {
   font-size: 17px;
   margin: 0;
 }
-.connection-container .connection-container-2{
-    line-height: 20px;
-    
+.connection-container .connection-container-2 {
+  line-height: 20px;
 }
-.connection-container-1{
-    width: 100%;
+.connection-container-1 {
+  width: 100%;
 }
-.connection-container-1 .heart-icon{
-    text-align: right;
-    margin-right: 20px;
-    font-size: 20px;
-    color: #a4127e;
+.connection-container-1 .heart-icon {
+  text-align: right;
+  margin-right: 2px;
+  font-size: 20px;
+  color: #a4127e;
 }
 .connection-container .cont {
   width: 33.333%;
 }
-.connection-container-3{
-    margin-left: 40px;
+@media (max-width: 600px) {
+  .connection-container .cont {
+    width: auto;
+  }
+}
+.connection-container-3 {
+  margin-left: 40px;
 }
 .connection-container-3 button {
   font-family: "Red Hat Display", Sans-serif;
@@ -139,13 +267,13 @@ img {
   /* border: navajowhite; */
   border-color: #a4127e;
   border-radius: 5px 5px 5px 5px;
-  padding: 8px 24px;
+  padding: 8px 20px;
   background-color: white;
   cursor: pointer;
 }
-.connection-container-3 button a{
-    color: #a4127e;
+.connection-container-3 button a {
+  color: #a4127e;
 }
-.connection-container-3 button:hover a{
-    color: white;
+.connection-container-3 button:hover a {
+  color: white;
 }
